@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="33a66ab4-0de6-4f89-886c-e0477298ee85" name="Default Changelist" comment="Functional code complete - &#10;No styling yet. No functions to hide elements depending on context yet." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1XgQjuA3nw239eVDMxW7GuOYCgG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../etch-a-sketch/index.html" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="$APPLICATION_CONFIG_DIR$/node/node-v10.16.0-win-x64/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+  </component>
+  <component name="RunManager">
+    <configuration name="script.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../playground/script.js" working-dir="$PROJECT_DIR$/../playground">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.script.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33a66ab4-0de6-4f89-886c-e0477298ee85" name="Default Changelist" comment="" />
+      <created>1581465395599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581465395599</updated>
+      <workItem from="1581465397004" duration="13085000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="709" y="231" key="CommitChangelistDialog2" timestamp="1581481682689">
+      <screen x="70" y="0" width="2490" height="1440" />
+    </state>
+    <state x="709" y="231" key="CommitChangelistDialog2/70.0.2490.1440@70.0.2490.1440" timestamp="1581481682689" />
+    <state x="475" y="478" key="FileChooserDialogImpl" timestamp="1581474696073">
+      <screen x="70" y="0" width="2490" height="1440" />
+    </state>
+    <state x="475" y="478" key="FileChooserDialogImpl/70.0.2490.1440@70.0.2490.1440" timestamp="1581474696073" />
+    <state x="196" y="365" key="SettingsEditor" timestamp="1581470456160">
+      <screen x="70" y="0" width="2490" height="1440" />
+    </state>
+    <state x="196" y="365" key="SettingsEditor/70.0.2490.1440@70.0.2490.1440" timestamp="1581470456160" />
+    <state x="1431" y="0" width="1135" height="1447" key="dock-window-1" timestamp="1581473384260">
+      <screen x="70" y="0" width="2490" height="1440" />
+    </state>
+    <state x="1431" y="0" width="1135" height="1447" key="dock-window-1/70.0.2490.1440@70.0.2490.1440" timestamp="1581473384260" />
+    <state x="791" y="0" width="659" height="1447" key="dock-window-2" timestamp="1581473384260">
+      <screen x="70" y="0" width="2490" height="1440" />
+    </state>
+    <state x="791" y="0" width="659" height="1447" key="dock-window-2/70.0.2490.1440@70.0.2490.1440" timestamp="1581473384260" />
+  </component>
+</project>
