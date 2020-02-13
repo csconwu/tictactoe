@@ -1,5 +1,125 @@
-#gameContainer {
+* {
+    font-family: "kulim Park", sans-serif;
+}
+
+body {
+    background-color: darkslategray;
+}
+
+.newGameContainer, .gameContainer, header {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 100%;
+}
+
+header {
+    font-size: 300%;
+    color: antiquewhite;
+}
+
+p.label {
+    font-size: 150%;
+    color: antiquewhite;
+    margin-bottom: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.winnerContainer {
+    margin: 50px auto;
+    font-size: 300%;
+    text-align: center;
+    font-weight: bold;
+    height: 80px;
+    line-height: 80px;
+    width: 50vw;
+}
+
+.gameContainer {
     display: grid;
-    grid-template-rows: repeat(3, minmax(100px, 1fr));
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 5px;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    max-width: 1000px;
+}
+
+.divNotInUse {
+    display: none;
+}
+button {
+    font-size: 150%;
+    margin: 15px 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.35s ease-out;
+    outline: none;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+button.selected {
+    background: mediumseagreen;
+    transform: scale(1.25);
+}
+
+#beginbtn {
+    background: firebrick;
+    color: antiquewhite;
+    width: 300px;
+    height: 100px;
+    font-weight: bold;
+}
+
+.gameContainer button {
+    border: none;
+    margin: 0;
+    font-size: 600%;
+    font-weight: bold;
+    color: darkslateblue;
+}
+
+.playAgain {
+    text-align: center;
+}
+
+.reset {
+    background-color: firebrick;
+    color: antiquewhite;
+}
+
+@media only screen and (max-width: 980px) {
+    header, .gameContainer, .newGameContainer {
+        width: 100%;
+    }
+    header {
+        font-size: 400%;
+        margin-top: 150px;
+        margin-bottom: 200px;
+    }
+    p.label {
+        font-size: 300%;
+    }
+    .winnerContainer {
+        font-size: 400%;
+        height: 100px;
+        line-height: 100px;
+    }
+    button{
+        font-size: 300%;
+        padding: 30px;
+        margin-top: 45px;
+    }
+    #beginbtn {
+        width: 600px;
+        height: 250px;
+    }
+
 }

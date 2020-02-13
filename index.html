@@ -11,15 +11,20 @@
         <h1>Tic-Tac-Toe</h1>
     </header>
     <main>
-        <div id="newGameContainer">
+        <div id="newGameContainer" class="newGameContainer">
             <form id="newGameForm">
-                <p class="label">Play Against</p>
+                <p class="label">PLAY AGAINST ?</p>
                 <button type="button" id="friendbtn" class="opponent">A Friend</button>
                 <button type="button" id="computerbtn" class="opponent">Computer</button>
-                <div><button type="button" id="beginbtn">Begin Game</button></div>
+                <div><button type="button" id="beginbtn">BEGIN</button></div>
             </form>
         </div>
-        <div id="gameContainer"></div>
+        <div id="winnerContainer" class="winnerContainer divNotInUse "></div>
+        <div id="gameContainer" class="divNotInUse gameContainer"></div>
+        <div id="playAgainContainer" class="playAgain divNotInUse">
+            <button type="button" id="restartbtn" class="reset">Restart?</button>
+            <button type="button" id="homebtn" class="reset">Home Page</button>
+        </div>
     </main>
     <script src="soro.js"></script>
 </body>

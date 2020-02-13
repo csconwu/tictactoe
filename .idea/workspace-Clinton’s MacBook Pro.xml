@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33a66ab4-0de6-4f89-886c-e0477298ee85" name="Default Changelist" comment="Day 2 complete - &#10;Added styling for all elements&#10;Added support for random computer moves&#10;Added container to display game status when over&#10;Added buttons to restart game or go back to the home page&#10;Added css support for mobile phones">
+    <list default="true" id="33a66ab4-0de6-4f89-886c-e0477298ee85" name="Default Changelist" comment="Functional code complete - &#10;No styling yet. No functions to hide elements depending on context yet.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soro.js" beforeDir="false" afterPath="$PROJECT_DIR$/soro.js" afterDir="false" />
@@ -44,7 +44,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../calculator/soro.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -90,8 +90,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581465395599</updated>
-      <workItem from="1581465397004" duration="30563000" />
-      <workItem from="1581568791256" duration="27000" />
+      <workItem from="1581465397004" duration="24539000" />
+      <workItem from="1581562802168" duration="340000" />
+      <workItem from="1581568777340" duration="5000" />
     </task>
     <servers />
   </component>
@@ -103,17 +104,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="709" y="231" key="CommitChangelistDialog2" timestamp="1581568745838">
+    <state x="709" y="231" key="CommitChangelistDialog2" timestamp="1581481682689">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="709" y="231" key="CommitChangelistDialog2/70.0.2490.1440@70.0.2490.1440" timestamp="1581568745838" />
+    <state x="709" y="231" key="CommitChangelistDialog2/70.0.2490.1440@70.0.2490.1440" timestamp="1581481682689" />
     <state x="475" y="478" key="FileChooserDialogImpl" timestamp="1581555549219">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
