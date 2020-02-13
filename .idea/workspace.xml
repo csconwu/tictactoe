@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33a66ab4-0de6-4f89-886c-e0477298ee85" name="Default Changelist" comment="Day 2 complete - &#10;Added styling for all elements&#10;Added support for random computer moves&#10;Added container to display game status when over&#10;Added buttons to restart game or go back to the home page&#10;Added css support for mobile phones">
+    <list default="true" id="33a66ab4-0de6-4f89-886c-e0477298ee85" name="Default Changelist" comment="Day 2 complete - &#10;Added styling for all elements&#10;Added support for random computer moves&#10;Added container to display game status when over&#10;Added buttons to restart game or go back to the home page&#10;Added css support for mobile phones&#10;Must say, it looks good!">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/clint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/clint.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tictactoe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tictactoe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace-Clinton’s MacBook Pro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace-Clinton’s MacBook Pro.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soro.js" beforeDir="false" afterPath="$PROJECT_DIR$/soro.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,18 +55,6 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tictactoe/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -79,6 +72,18 @@
         <item itemvalue="Node.js.script.js" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -103,17 +108,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="709" y="231" key="CommitChangelistDialog2" timestamp="1581568745838">
+    <state x="709" y="231" key="CommitChangelistDialog2" timestamp="1581569127629">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="709" y="231" key="CommitChangelistDialog2/70.0.2490.1440@70.0.2490.1440" timestamp="1581568745838" />
+    <state x="709" y="231" key="CommitChangelistDialog2/70.0.2490.1440@70.0.2490.1440" timestamp="1581569127629" />
     <state x="475" y="478" key="FileChooserDialogImpl" timestamp="1581555549219">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
@@ -202,13 +209,13 @@
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
     <state x="196" y="365" key="SettingsEditor/70.0.2490.1440@70.0.2490.1440" timestamp="1581470456160" />
-    <state x="1432" y="0" width="1135" height="1447" key="dock-window-1" timestamp="1581553318461">
+    <state x="1309" y="0" width="1258" height="1447" key="dock-window-1" timestamp="1581569110907">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="1432" y="0" width="1135" height="1447" key="dock-window-1/70.0.2490.1440@70.0.2490.1440" timestamp="1581553318461" />
-    <state x="791" y="0" width="659" height="1447" key="dock-window-2" timestamp="1581552261544">
+    <state x="1309" y="0" width="1258" height="1447" key="dock-window-1/70.0.2490.1440@70.0.2490.1440" timestamp="1581569110907" />
+    <state x="791" y="0" width="659" height="1447" key="dock-window-2" timestamp="1581569110907">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="791" y="0" width="659" height="1447" key="dock-window-2/70.0.2490.1440@70.0.2490.1440" timestamp="1581552261544" />
+    <state x="791" y="0" width="659" height="1447" key="dock-window-2/70.0.2490.1440@70.0.2490.1440" timestamp="1581569110907" />
   </component>
 </project>
