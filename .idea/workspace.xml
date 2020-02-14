@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33a66ab4-0de6-4f89-886c-e0477298ee85" name="Default Changelist" comment="Day 2 complete - &#10;Added styling for all elements&#10;Added support for random computer moves&#10;Added container to display game status when over&#10;Added buttons to restart game or go back to the home page&#10;Added css support for mobile phones&#10;Must say, it looks good!">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/clint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/clint.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tictactoe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tictactoe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace-Clinton’s MacBook Pro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace-Clinton’s MacBook Pro.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soro.js" beforeDir="false" afterPath="$PROJECT_DIR$/soro.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -49,13 +43,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../calculator/soro.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../playground/script.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path" value="$APPLICATION_CONFIG_DIR$/node/node-v10.16.0-win-x64/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="Node.js.script.js">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tictactoe/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -67,9 +61,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.script.js" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Node.js.soro.js" />
-        <item itemvalue="Node.js.script.js" />
       </list>
     </recent_temporary>
   </component>
@@ -97,6 +91,7 @@
       <updated>1581465395599</updated>
       <workItem from="1581465397004" duration="30563000" />
       <workItem from="1581568791256" duration="27000" />
+      <workItem from="1581645715482" duration="6503000" />
     </task>
     <servers />
   </component>
@@ -117,30 +112,30 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="709" y="231" key="CommitChangelistDialog2" timestamp="1581569127629">
+    <state x="709" y="231" key="CommitChangelistDialog2" timestamp="1581569167864">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="709" y="231" key="CommitChangelistDialog2/70.0.2490.1440@70.0.2490.1440" timestamp="1581569127629" />
-    <state x="475" y="478" key="FileChooserDialogImpl" timestamp="1581555549219">
+    <state x="709" y="231" key="CommitChangelistDialog2/70.0.2490.1440@70.0.2490.1440" timestamp="1581569167864" />
+    <state x="475" y="478" key="FileChooserDialogImpl" timestamp="1581646620029">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="475" y="478" key="FileChooserDialogImpl/70.0.2490.1440@70.0.2490.1440" timestamp="1581555549219" />
-    <state width="705" height="484" key="GridCell.Tab.0.bottom" timestamp="1581558014102">
+    <state x="475" y="478" key="FileChooserDialogImpl/70.0.2490.1440@70.0.2490.1440" timestamp="1581646620029" />
+    <state width="706" height="388" key="GridCell.Tab.0.bottom" timestamp="1581646739892">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state width="705" height="484" key="GridCell.Tab.0.bottom/70.0.2490.1440@70.0.2490.1440" timestamp="1581558014102" />
-    <state width="705" height="484" key="GridCell.Tab.0.center" timestamp="1581558014102">
+    <state width="706" height="388" key="GridCell.Tab.0.bottom/70.0.2490.1440@70.0.2490.1440" timestamp="1581646739892" />
+    <state width="706" height="388" key="GridCell.Tab.0.center" timestamp="1581646739892">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state width="705" height="484" key="GridCell.Tab.0.center/70.0.2490.1440@70.0.2490.1440" timestamp="1581558014102" />
-    <state width="705" height="484" key="GridCell.Tab.0.left" timestamp="1581558014102">
+    <state width="706" height="388" key="GridCell.Tab.0.center/70.0.2490.1440@70.0.2490.1440" timestamp="1581646739892" />
+    <state width="706" height="388" key="GridCell.Tab.0.left" timestamp="1581646739892">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state width="705" height="484" key="GridCell.Tab.0.left/70.0.2490.1440@70.0.2490.1440" timestamp="1581558014102" />
-    <state width="705" height="484" key="GridCell.Tab.0.right" timestamp="1581558014102">
+    <state width="706" height="388" key="GridCell.Tab.0.left/70.0.2490.1440@70.0.2490.1440" timestamp="1581646739892" />
+    <state width="706" height="388" key="GridCell.Tab.0.right" timestamp="1581646739892">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state width="705" height="484" key="GridCell.Tab.0.right/70.0.2490.1440@70.0.2490.1440" timestamp="1581558014102" />
+    <state width="706" height="388" key="GridCell.Tab.0.right/70.0.2490.1440@70.0.2490.1440" timestamp="1581646739892" />
     <state width="705" height="484" key="GridCell.Tab.1.bottom" timestamp="1581558014103">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
@@ -205,17 +200,25 @@
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
     <state width="705" height="484" key="GridCell.Tab.4.right/70.0.2490.1440@70.0.2490.1440" timestamp="1581558007385" />
-    <state x="196" y="365" key="SettingsEditor" timestamp="1581470456160">
+    <state x="196" y="365" key="SettingsEditor" timestamp="1581646692062">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="196" y="365" key="SettingsEditor/70.0.2490.1440@70.0.2490.1440" timestamp="1581470456160" />
-    <state x="1309" y="0" width="1258" height="1447" key="dock-window-1" timestamp="1581569110907">
+    <state x="196" y="365" key="SettingsEditor/70.0.2490.1440@70.0.2490.1440" timestamp="1581646692062" />
+    <state x="29" y="452" key="Vcs.Push.Dialog.v2" timestamp="1581569178106">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="1309" y="0" width="1258" height="1447" key="dock-window-1/70.0.2490.1440@70.0.2490.1440" timestamp="1581569110907" />
-    <state x="791" y="0" width="659" height="1447" key="dock-window-2" timestamp="1581569110907">
+    <state x="29" y="452" key="Vcs.Push.Dialog.v2/70.0.2490.1440@70.0.2490.1440" timestamp="1581569178106" />
+    <state x="1309" y="0" width="1258" height="1447" key="dock-window-1" timestamp="1581646945275">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="791" y="0" width="659" height="1447" key="dock-window-2/70.0.2490.1440@70.0.2490.1440" timestamp="1581569110907" />
+    <state x="1309" y="0" width="1258" height="1447" key="dock-window-1/70.0.2490.1440@70.0.2490.1440" timestamp="1581646945275" />
+    <state x="791" y="0" width="659" height="1447" key="dock-window-2" timestamp="1581646945275">
+      <screen x="70" y="0" width="2490" height="1440" />
+    </state>
+    <state x="791" y="0" width="659" height="1447" key="dock-window-2/70.0.2490.1440@70.0.2490.1440" timestamp="1581646945275" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1581646664975">
+      <screen x="70" y="0" width="2490" height="1440" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/70.0.2490.1440@70.0.2490.1440" timestamp="1581646664975" />
   </component>
 </project>
