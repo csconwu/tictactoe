@@ -110,12 +110,14 @@ const GameElements = (function() {
     const createGameGrid = () => {
         if (gameContainer.firstChild) return;
         let x=1; let y=1;
-        for (let i=0; i<9; i++) {
+        gameContainer.style.gridTemplateColumns = `repeat(${gridSize}, minmax(150px, 1fr))`;
+        gameContainer.style.gridTemplateRows = `repeat(${gridSize}, minmax(150px, 1fr))`;
+        for (let i=0; i<consecutiveGrids**2; i++) {
             let gameButton = document.createElement('button');
             gameButton.type = "button"; _toggleClass(gameButton, "gamebtn");
             _toggleClass(gameButton, "available");
             addTouchAndClickList(gameButton, makePlayerSelection);
-            if (x > 3) {x = 1; y++;}
+            if (x > consecutiveGrids) {x = 1; y++;}
             gameButton.dataset.x = x.toString(); gameButton.dataset.y = y.toString();
             x++;
             gameContainer.appendChild(gameButton);
@@ -132,6 +134,11 @@ const GameElements = (function() {
         playAgainContainer.classList.remove("divNotInUse");
         if (gameChecks.isGameOver) {
             _toggleClass(winnerContainer,"divNotInUse");
+            let remainingButtons = arrayActiveGridButtons();
+            for (let i=0; i<remainingButtons.length; i++) {
+                remainingButtons[i].removeEventListener("touchstart click", makePlayerSelection);
+                remainingButtons[i].removeEventListener('click', makePlayerSelection);
+            }
             if (gameChecks.value === "X") {
                 winnerContainer.textContent = "YOU WON !!!";
                 winnerContainer.style.backgroundColor ="yellow";
@@ -143,6 +150,8 @@ const GameElements = (function() {
                 winnerContainer.style.color = "yellow";
                 return;
             }
+
+
         }
         if (opponentIsComputer && !e.isComputer) {
             isComputerTurn = true;
