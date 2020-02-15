@@ -24,10 +24,8 @@ const GameModule = (function() {
             // New Check for Vertical Win
 
             let keysX = Object.keys(countX);
-            console.log(countX);
             vertCheck = keysX.some(key => {
                 if (countX[key] == consecNumToWin) {
-                    console.log("I hit this - limit check correct");
                     let corrYArray = [];
                     _moves.forEach(move => {if (move.x == key) {corrYArray.push(move.y)}}); //add all the corresponding y values
                     corrYArray.sort((a,b) => {return a - b});
@@ -99,25 +97,36 @@ const GameElements = (function() {
     let restartbtn = document.getElementById("restartbtn");
     let homebtn = document.getElementById("homebtn");
     let winnerContainer = document.getElementById("winnerContainer");
+    let gridSizeInput = document.getElementById("gridSize");
+    let connectionSizeInput = document.getElementById("connectionSize");
 
     let isComputerTurn, opponentIsComputer;
 
     // temporary, remove after you create elements for grid size and consecutive number to win
-    let gridSize = 3; let consecutiveGrids = 3;
+    let gridSize = 3; let consecConnections = 3; let numOfMoves;
 
     function _toggleClass(div, divClass) {div.classList.toggle(divClass)}
 
     const createGameGrid = () => {
+        numOfMoves = 0;
         if (gameContainer.firstChild) return;
         let x=1; let y=1;
-        gameContainer.style.gridTemplateColumns = `repeat(${gridSize}, minmax(150px, 1fr))`;
-        gameContainer.style.gridTemplateRows = `repeat(${gridSize}, minmax(150px, 1fr))`;
-        for (let i=0; i<consecutiveGrids**2; i++) {
+        let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        let height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
+        let btnWidth = (width - 50)/gridSize;
+        btnWidth = btnWidth > 150 ? 150 : btnWidth;
+        let btnHeight = (height*0.75)/gridSize;
+        let sizeToUse = Math.min(btnWidth, btnHeight);
+        sizeToUse = sizeToUse < 100 ? 100 : sizeToUse;
+
+        gameContainer.style.gridTemplateColumns = `repeat(${gridSize}, ${sizeToUse}px)`;
+        gameContainer.style.gridTemplateRows = `repeat(${gridSize}, ${sizeToUse}px)`;
+        for (let i=0; i<gridSize**2; i++) {
             let gameButton = document.createElement('button');
             gameButton.type = "button"; _toggleClass(gameButton, "gamebtn");
             _toggleClass(gameButton, "available");
             addTouchAndClickList(gameButton, makePlayerSelection);
-            if (x > consecutiveGrids) {x = 1; y++;}
+            if (x > gridSize) {x = 1; y++;}
             gameButton.dataset.x = x.toString(); gameButton.dataset.y = y.toString();
             x++;
             gameContainer.appendChild(gameButton);
@@ -131,7 +140,14 @@ const GameElements = (function() {
         e.target.removeEventListener("touchstart click", makePlayerSelection);
         e.target.removeEventListener('click', makePlayerSelection);
         _toggleClass(e.target, "available");
-        playAgainContainer.classList.remove("divNotInUse");
+        numOfMoves++;
+        if (_isDraw()) {
+            _toggleClass(winnerContainer,"divNotInUse");
+            winnerContainer.textContent = "IT'S A DRAW";
+            winnerContainer.style.backgroundColor = "aquamarine";
+            winnerContainer.style.color = "black";
+            return;
+        }
         if (gameChecks.isGameOver) {
             _toggleClass(winnerContainer,"divNotInUse");
             let remainingButtons = arrayActiveGridButtons();
@@ -143,15 +159,13 @@ const GameElements = (function() {
                 winnerContainer.textContent = "YOU WON !!!";
                 winnerContainer.style.backgroundColor ="yellow";
                 winnerContainer.style.color = "firebrick";
-                return
+                return;
             } else {
                 winnerContainer.textContent = "YOU LOST !!!";
                 winnerContainer.style.backgroundColor ="firebrick";
                 winnerContainer.style.color = "yellow";
                 return;
             }
-
-
         }
         if (opponentIsComputer && !e.isComputer) {
             isComputerTurn = true;
@@ -169,17 +183,18 @@ const GameElements = (function() {
 
         _toggleClass(newGameContainer,"divNotInUse");
         _toggleClass(gameContainer,"divNotInUse");
+        _toggleClass(playAgainContainer, "divNotInUse");
+        _toggleClass(document.querySelector("header"),"divNotInUse");
         //for now just going to pass text content. Don't know if this will need updating
         createGameGrid();
-        opponentIsComputer = GameModule.newGame(document.querySelector(".selected").textContent, consecutiveGrids); //have to update reset game if changes made here
+        opponentIsComputer = GameModule.newGame(document.querySelector(".selected").textContent, consecConnections); //have to update reset game if changes made here
     }
     function _resetGame() {
         clearGameGrid();
         createGameGrid();
-        _toggleClass(playAgainContainer,"divNotInUse");
         winnerContainer.classList.add("divNotInUse");
         isComputerTurn = false;
-        GameModule.newGame(document.querySelector(".selected").textContent, consecutiveGrids);
+        GameModule.newGame(document.querySelector(".selected").textContent, consecConnections);
     }
     function addTouchAndClickList(divElement,elFunction) {
         divElement.addEventListener('click', elFunction); divElement.addEventListener('touchstart click', elFunction);
@@ -187,14 +202,20 @@ const GameElements = (function() {
     function arrayActiveGridButtons() {
         return document.getElementsByClassName("available");
     }
+    function _updateSizes() {
+        gridSize = gridSizeInput.value;
+        document.getElementById("gridSizeDisplay").textContent = gridSize;
+        consecConnections = connectionSizeInput.value;
+        document.getElementById("connectionDisplay").textContent = consecConnections;
+    }
+    function _isDraw() {return numOfMoves === gridSize**2};
+
 
     function computerRandomMove() {
         let arrayObj ={};
         let arrayActive = arrayActiveGridButtons();
         if (arrayActive.length === 0) {return}
         arrayObj.target = arrayActive[Math.floor(Math.random() * (arrayActive.length))];
-        console.log(arrayActive.length);
-        console.log(arrayObj.target);
         arrayObj.isComputer = true;
         makePlayerSelection(arrayObj);
         isComputerTurn =false;
@@ -205,5 +226,8 @@ const GameElements = (function() {
     addTouchAndClickList(beginbtn, _beginGame);
     addTouchAndClickList(restartbtn, _resetGame);
     addTouchAndClickList(homebtn, function() {location.reload()});
+
+    gridSizeInput.addEventListener("input",_updateSizes);
+    connectionSizeInput.addEventListener("input", _updateSizes);
 
 })();

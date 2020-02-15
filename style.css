@@ -1,15 +1,23 @@
 * {
     font-family: "kulim Park", sans-serif;
+    transition: 500ms ease-in-out;
 }
 
-body {
+body, html {
     background-color: darkslategray;
+    min-width: 950px;
 }
-
+main {
+    text-align: center;
+}
 .newGameContainer, .gameContainer, header {
     text-align: center;
     margin: 50px auto;
     font-size: 100%;
+}
+
+.gameContainer button {
+    touch-action: manipulation;
 }
 
 header {
@@ -38,7 +46,7 @@ p.label {
     width: 270px;
     position: relative;
     height: 30px;
-    padding: 0 10px;
+    padding: 0 30px;
 }
 
 
@@ -54,8 +62,9 @@ p.label {
     font-size: 150%;
     color: antiquewhite;
     position: relative;
-    padding: 0 10px;
-    width: 250px;
+    padding: 0 10px 0 125px;
+    width: 175px;
+    text-align: left;
 }
 
 h1 {
@@ -73,16 +82,28 @@ h1 {
 }
 
 .gameContainer {
-    display: grid;
+    display: inline-grid;
     grid-gap: 5px;
     background-color: antiquewhite;
     border-radius: 50px;
-    max-width: 1000px;
+    margin-top: 50px;
 }
 
 .divNotInUse {
+    height: 0;
+    transform:scale(0);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.divNotInUse * {
     display: none;
 }
+
+#winnerContainer.divNotInUse {
+    height: 0;
+}
+
 button {
     font-size: 150%;
     margin: 15px 20px;
@@ -121,6 +142,7 @@ button.selected {
 
 .playAgain {
     text-align: center;
+    margin: 50px 0;
 }
 
 .reset {
@@ -148,23 +170,49 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 @media only screen and (max-width: 980px) {
-    header, .gameContainer, .newGameContainer {
-        width: 100%;
-    }
     header {
         font-size: 400%;
-        margin-top: 150px;
-        margin-bottom: 200px;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
     p.label {
         font-size: 300%;
     }
+    .range label {
+        font-size: 220%;
+        width: 400px;
+        padding: 0;
+    }
+    .valueDisplay {
+        width: 300px;
+        padding-left: 175px;
+        text-align: center;
+    }
+    .range > * {
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    input[type=range] {
+        height: 30px;
+        border-radius: 25px;
+        width: 250px;
+    }
+    input[type=range]::-webkit-slider-thumb {
+        height: 40px;
+        width: 40px;
+    }
+
+    .gameContainer button {
+        font-size: 300%;
+        padding: 5px;
+    }
     .winnerContainer {
         font-size: 400%;
-        height: 100px;
-        line-height: 100px;
+        height: 70px;
+        line-height: 70px;
     }
-    button{
+    button {
         font-size: 300%;
         padding: 30px;
         margin-top: 45px;

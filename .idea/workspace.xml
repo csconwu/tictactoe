@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33a66ab4-0de6-4f89-886c-e0477298ee85" name="Default Changelist" comment="Day 3 part 1 - &#10;Replaced win checks with new robust logic. Logic should now work with dynamic consecutive connections required to win.">
+    <list default="true" id="33a66ab4-0de6-4f89-886c-e0477298ee85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soro.js" beforeDir="false" afterPath="$PROJECT_DIR$/soro.js" afterDir="false" />
@@ -43,7 +43,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../etch-a-sketch/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../etch-a-sketch/soro.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="$APPLICATION_CONFIG_DIR$/node/node-v10.16.0-win-x64/node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -91,7 +91,7 @@
       <updated>1581465395599</updated>
       <workItem from="1581465397004" duration="30563000" />
       <workItem from="1581568791256" duration="27000" />
-      <workItem from="1581645715482" duration="11731000" />
+      <workItem from="1581645715482" duration="23557000" />
     </task>
     <task id="LOCAL-00001" summary="Day 3 part 1 - &#10;Replaced win checks with new robust logic. Logic should now work with dynamic consecutive connections required to win.">
       <created>1581652433854</created>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581652433854</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Day 3 part 2 - &#10;Added support in js file for dynamic grid sizes and connection sizes. Yet to implement handlers for the range input on the settings page.">
+      <created>1581657818779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581657818779</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,17 +128,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Day 3 part 1 - &#10;Replaced win checks with new robust logic. Logic should now work with dynamic consecutive connections required to win." />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 3 part 1 - &#10;Replaced win checks with new robust logic. Logic should now work with dynamic consecutive connections required to win." />
+    <MESSAGE value="Day 3 part 2 - &#10;Added support in js file for dynamic grid sizes and connection sizes. Yet to implement handlers for the range input on the settings page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 3 part 2 - &#10;Added support in js file for dynamic grid sizes and connection sizes. Yet to implement handlers for the range input on the settings page." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="709" y="231" key="CommitChangelistDialog2" timestamp="1581654245571">
+    <state x="709" y="231" key="CommitChangelistDialog2" timestamp="1581657818350">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="709" y="231" key="CommitChangelistDialog2/70.0.2490.1440@70.0.2490.1440" timestamp="1581654245571" />
-    <state x="475" y="478" key="FileChooserDialogImpl" timestamp="1581654279432">
+    <state x="709" y="231" key="CommitChangelistDialog2/70.0.2490.1440@70.0.2490.1440" timestamp="1581657818350" />
+    <state x="475" y="478" key="FileChooserDialogImpl" timestamp="1581787394057">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="475" y="478" key="FileChooserDialogImpl/70.0.2490.1440@70.0.2490.1440" timestamp="1581654279432" />
+    <state x="475" y="478" key="FileChooserDialogImpl/70.0.2490.1440@70.0.2490.1440" timestamp="1581787394057" />
     <state width="706" height="388" key="GridCell.Tab.0.bottom" timestamp="1581646739892">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
@@ -216,10 +224,10 @@
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
     <state x="196" y="365" key="SettingsEditor/70.0.2490.1440@70.0.2490.1440" timestamp="1581646692062" />
-    <state x="1531" y="452" key="Vcs.Push.Dialog.v2" timestamp="1581652439170">
+    <state x="1531" y="452" key="Vcs.Push.Dialog.v2" timestamp="1581657820735">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state x="1531" y="452" key="Vcs.Push.Dialog.v2/70.0.2490.1440@70.0.2490.1440" timestamp="1581652439170" />
+    <state x="1531" y="452" key="Vcs.Push.Dialog.v2/70.0.2490.1440@70.0.2490.1440" timestamp="1581657820735" />
     <state x="1309" y="0" width="1258" height="1447" key="dock-window-1" timestamp="1581646945275">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
