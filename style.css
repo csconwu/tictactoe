@@ -1,6 +1,7 @@
 * {
     font-family: "kulim Park", sans-serif;
     transition: 500ms ease-in-out;
+    touch-action: manipulation;
 }
 
 body, html {
@@ -14,10 +15,6 @@ main {
     text-align: center;
     margin: 50px auto;
     font-size: 100%;
-}
-
-.gameContainer button {
-    touch-action: manipulation;
 }
 
 header {
@@ -86,7 +83,15 @@ h1 {
     grid-gap: 5px;
     background-color: antiquewhite;
     border-radius: 50px;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+.gameContainer button {
+    border: none;
+    margin: 0;
+    font-size: 400%;
+    font-weight: bold;
+    color: darkslateblue;
 }
 
 .divNotInUse {
@@ -132,17 +137,9 @@ button.selected {
     font-weight: bold;
 }
 
-.gameContainer button {
-    border: none;
-    margin: 0;
-    font-size: 600%;
-    font-weight: bold;
-    color: darkslateblue;
-}
-
 .playAgain {
     text-align: center;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 
 .reset {

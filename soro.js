@@ -76,7 +76,8 @@ const GameElements = (function() {
     let isComputerTurn, opponentIsComputer;
     let gridSize; let consecConnections; let numOfMoves;
     //functions
-    const _createGameGrid = () => {
+    function _createGameGrid() {
+        
         numOfMoves = 0;
         if (gameContainer.firstChild) return;
         let x=1; let y=1;
@@ -86,7 +87,7 @@ const GameElements = (function() {
         btnWidth = btnWidth > 150 ? 150 : btnWidth;
         let btnHeight = (height*0.75)/gridSize;
         let sizeToUse = Math.min(btnWidth, btnHeight);
-        sizeToUse = sizeToUse < 100 ? 100 : sizeToUse;
+        // sizeToUse = sizeToUse < 100 ? 100 : sizeToUse;
         gameContainer.style.gridTemplateColumns = `repeat(${gridSize}, ${sizeToUse}px)`;
         gameContainer.style.gridTemplateRows = `repeat(${gridSize}, ${sizeToUse}px)`;
         for (let i=0; i<gridSize**2; i++) {
@@ -100,7 +101,7 @@ const GameElements = (function() {
             gameContainer.appendChild(gameButton);
         }
     };
-    const _clearGameGrid = () => {while (gameContainer.firstChild) {gameContainer.removeChild(gameContainer.firstChild)}};
+    function _clearGameGrid() {while (gameContainer.firstChild) {gameContainer.removeChild(gameContainer.firstChild)}};
     function _makePlayerSelection(e) {
         if (isComputerTurn && !e.isComputer) {return}
         let gameChecks = GameModule.playerMove(e.target.dataset.x, e.target.dataset.y);
@@ -148,7 +149,6 @@ const GameElements = (function() {
     }
     function _beginGame() {
         if (!document.querySelector(".selected")) {alert("Please choose an opponent first"); return}
-
         _updateSizes();
         _toggleClass(newGameContainer,"divNotInUse");
         _toggleClass(gameContainer,"divNotInUse");
