@@ -42,7 +42,7 @@ const GameModule = (function() {
             diagCheck = diagonalChecks();
             return vertCheck || horCheck || diagCheck;
         };
-        return {addMove, isGameWon}
+        return {addMove, isGameWon, _moves}
     };
     const newGame = (opponent, consecutiveGrids) => {
         player1 = _Player("Player 1"); player2 = _Player(opponent); _playerOneTurn = true;
@@ -52,7 +52,6 @@ const GameModule = (function() {
     const playerMove = (x, y) => {
         let playerChecks = {};
         if (_playerOneTurn) {player1.addMove(+(x),+(y)); _playerOneTurn=false; playerChecks.value = "X"}
-        // else if (_opponentIsComputer) {/*computer function to make a random move */}
         else {player2.addMove(+(x), +(y)); _playerOneTurn=true; playerChecks.value = "O"}
         playerChecks.isGameOver = player1.isGameWon() || player2.isGameWon();
         return playerChecks;
@@ -60,7 +59,7 @@ const GameModule = (function() {
     return {newGame, playerMove}
 })();
 
-const GameElements = (function() {
+(function() {
     "use strict";
     let newGameContainer = document.getElementById("newGameContainer");
     let gameContainer = document.getElementById("gameContainer");
@@ -75,9 +74,9 @@ const GameElements = (function() {
     let connectionSizeInput = document.getElementById("connectionSize");
     let isComputerTurn, opponentIsComputer;
     let gridSize; let consecConnections; let numOfMoves;
+    let gameBoard =[];
     //functions
     function _createGameGrid() {
-        
         numOfMoves = 0;
         if (gameContainer.firstChild) return;
         let x=1; let y=1;
@@ -97,14 +96,19 @@ const GameElements = (function() {
             _addTouchAndClickHandlers(gameButton, _makePlayerSelection);
             if (x > gridSize) {x = 1; y++;}
             gameButton.dataset.x = x.toString(); gameButton.dataset.y = y.toString();
+            gameBoard.push([x, y]);
             x++;
             gameContainer.appendChild(gameButton);
         }
-    };
-    function _clearGameGrid() {while (gameContainer.firstChild) {gameContainer.removeChild(gameContainer.firstChild)}};
+    }
+    function _clearGameGrid() {while (gameContainer.firstChild) {gameContainer.removeChild(gameContainer.firstChild)}}
     function _makePlayerSelection(e) {
         if (isComputerTurn && !e.isComputer) {return}
         let gameChecks = GameModule.playerMove(e.target.dataset.x, e.target.dataset.y);
+        let gameBoardIndex = gameBoard.findIndex((point) => {
+            return point[0] === +(e.target.dataset.x) && point[1] === +(e.target.dataset.y)
+        });
+        gameBoard.splice(gameBoardIndex, 1);
         e.target.textContent = gameChecks.value;
         e.target.removeEventListener("touchstart click", _makePlayerSelection);
         e.target.removeEventListener('click', _makePlayerSelection);
@@ -125,21 +129,18 @@ const GameElements = (function() {
                 remainingButtons[i].removeEventListener('click', _makePlayerSelection);
             }
             if (gameChecks.value === "X") {
-                winnerContainer.textContent = "YOU WON !!!";
+                winnerContainer.textContent = opponentIsComputer? "YOU WON !!!" : "Player 1 won this round";
                 winnerContainer.style.backgroundColor ="yellow";
                 winnerContainer.style.color = "firebrick";
                 return;
             } else {
-                winnerContainer.textContent = "YOU LOST !!!";
+                winnerContainer.textContent = opponentIsComputer? "YOU LOST !!!" : "Player 2 won this round";
                 winnerContainer.style.backgroundColor ="firebrick";
                 winnerContainer.style.color = "yellow";
                 return;
             }
         }
-        if (opponentIsComputer && !e.isComputer) {
-            isComputerTurn = true;
-            const computerMove = setTimeout(computerRandomMove,1000);
-        }
+        if (opponentIsComputer && !e.isComputer) {isComputerTurn = true; const computerMove = setTimeout(computerRandomMove,1000)}
     }
     function _selectOpponent(e) {
         Array.from(document.getElementsByClassName("selected")).forEach(function(element) {

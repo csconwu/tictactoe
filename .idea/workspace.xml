@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33a66ab4-0de6-4f89-886c-e0477298ee85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/clint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/clint.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tictactoe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tictactoe.iml" afterDir="false" />
@@ -13,7 +14,6 @@
       <change beforePath="$PROJECT_DIR$/soro.js" beforeDir="false" afterPath="$PROJECT_DIR$/soro.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,18 +56,6 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Node.js.script.js">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tictactoe/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -85,6 +73,18 @@
         <item itemvalue="Node.js.soro.js" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -164,22 +164,22 @@
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
     <state x="475" y="478" key="FileChooserDialogImpl/70.0.2490.1440@70.0.2490.1440" timestamp="1581799081127" />
-    <state width="706" height="388" key="GridCell.Tab.0.bottom" timestamp="1581800329141">
+    <state width="706" height="388" key="GridCell.Tab.0.bottom" timestamp="1581985903642">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state width="706" height="388" key="GridCell.Tab.0.bottom/70.0.2490.1440@70.0.2490.1440" timestamp="1581800329141" />
-    <state width="706" height="388" key="GridCell.Tab.0.center" timestamp="1581800329141">
+    <state width="706" height="388" key="GridCell.Tab.0.bottom/70.0.2490.1440@70.0.2490.1440" timestamp="1581985903642" />
+    <state width="706" height="388" key="GridCell.Tab.0.center" timestamp="1581985903642">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state width="706" height="388" key="GridCell.Tab.0.center/70.0.2490.1440@70.0.2490.1440" timestamp="1581800329141" />
-    <state width="706" height="388" key="GridCell.Tab.0.left" timestamp="1581800329141">
+    <state width="706" height="388" key="GridCell.Tab.0.center/70.0.2490.1440@70.0.2490.1440" timestamp="1581985903642" />
+    <state width="706" height="388" key="GridCell.Tab.0.left" timestamp="1581985903642">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state width="706" height="388" key="GridCell.Tab.0.left/70.0.2490.1440@70.0.2490.1440" timestamp="1581800329141" />
-    <state width="706" height="388" key="GridCell.Tab.0.right" timestamp="1581800329141">
+    <state width="706" height="388" key="GridCell.Tab.0.left/70.0.2490.1440@70.0.2490.1440" timestamp="1581985903642" />
+    <state width="706" height="388" key="GridCell.Tab.0.right" timestamp="1581985903642">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
-    <state width="706" height="388" key="GridCell.Tab.0.right/70.0.2490.1440@70.0.2490.1440" timestamp="1581800329141" />
+    <state width="706" height="388" key="GridCell.Tab.0.right/70.0.2490.1440@70.0.2490.1440" timestamp="1581985903642" />
     <state width="705" height="484" key="GridCell.Tab.1.bottom" timestamp="1581558014103">
       <screen x="70" y="0" width="2490" height="1440" />
     </state>
