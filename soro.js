@@ -114,13 +114,6 @@ const GameModule = (function() {
         e.target.removeEventListener('click', _makePlayerSelection);
         _toggleClass(e.target, "available");
         numOfMoves++;
-        if (_isDraw()) {
-            _toggleClass(winnerContainer,"divNotInUse");
-            winnerContainer.textContent = "IT'S A DRAW";
-            winnerContainer.style.backgroundColor = "aquamarine";
-            winnerContainer.style.color = "black";
-            return;
-        }
         if (gameChecks.isGameOver) {
             _toggleClass(winnerContainer,"divNotInUse");
             let remainingButtons = _getActiveGridButtons();
@@ -139,6 +132,13 @@ const GameModule = (function() {
                 winnerContainer.style.color = "yellow";
                 return;
             }
+        }
+        if (_isDraw()) {
+            _toggleClass(winnerContainer,"divNotInUse");
+            winnerContainer.textContent = "IT'S A DRAW";
+            winnerContainer.style.backgroundColor = "aquamarine";
+            winnerContainer.style.color = "black";
+            return;
         }
         if (opponentIsComputer && !e.isComputer) {isComputerTurn = true; const computerMove = setTimeout(computerRandomMove,1000)}
     }
