@@ -100,7 +100,7 @@
       <workItem from="1581568791256" duration="27000" />
       <workItem from="1581645715482" duration="32129000" />
       <workItem from="1581873871118" duration="886000" />
-      <workItem from="1582076700953" duration="216000" />
+      <workItem from="1582076700953" duration="314000" />
     </task>
     <task id="LOCAL-00001" summary="Day 3 part 1 - &#10;Replaced win checks with new robust logic. Logic should now work with dynamic consecutive connections required to win.">
       <created>1581652433854</created>
