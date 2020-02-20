@@ -1,6 +1,3 @@
-import _ from 'lodash';
-import myName from "./myName";
-
 const GameModule = (function() {
     "use strict";
     let player1, player2; let _playerOneTurn = true; let _opponentIsComputer = false; let consecNumToWin;
@@ -29,7 +26,6 @@ const GameModule = (function() {
                     } else {return false}
                 })
             }
-            _.add(1, 2); //REMOVE REMOVE REMOVE !!!
             function diagonalChecks() {
                 return _moves.some((move) => {
                     let a = move.x; let b = move.y; let diagCountL = 0; let diagCountR = 0;
