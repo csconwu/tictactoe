@@ -74,6 +74,7 @@ const GameModule = (function() {
     let connectionSizeInput = document.getElementById("connectionSize");
     let isComputerTurn, opponentIsComputer;
     let gridSize; let consecConnections; let numOfMoves;
+    let computerMove = null;
     let gameBoard =[];
     //functions
     function _createGameGrid() {
@@ -140,7 +141,10 @@ const GameModule = (function() {
             winnerContainer.style.color = "black";
             return;
         }
-        if (opponentIsComputer && !e.isComputer) {isComputerTurn = true; const computerMove = setTimeout(computerRandomMove,1000)}
+        if (opponentIsComputer && !e.isComputer) {
+            isComputerTurn = true;
+            computerMove = setTimeout(computerRandomMove,1000);
+        }
     }
     function _selectOpponent(e) {
         Array.from(document.getElementsByClassName("selected")).forEach(function(element) {
@@ -164,6 +168,7 @@ const GameModule = (function() {
         _createGameGrid();
         winnerContainer.classList.add("divNotInUse");
         isComputerTurn = false;
+        clearTimeout(computerMove);
         GameModule.newGame(document.querySelector(".selected").textContent, consecConnections);
     }
     function _addTouchAndClickHandlers(divElement,elFunction) {
